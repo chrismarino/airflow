@@ -31,7 +31,7 @@ args = {
 }
 
 dag = DAG(
-    dag_id='fetch',
+    dag_id='S3_fetch',
     default_args=args,
     schedule_interval='0 0 * * *',
     dagrun_timeout=timedelta(minutes=60),
